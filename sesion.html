@@ -10,21 +10,58 @@
     <h1>Registro / Inicio de Sesión:</h1>
 </header>
 <body>
-    <section>
-        <h2>Registro:</h2>
-        <form action="/procesar_datos" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-  
-        <label for="email">Correo:</label>
-        <input type="email" id="email" name="email" required>
-  
-        <button type="submit">Enviar</button>
-        </form>
+    <section style = "border: 2px solid black;">
+        <h3 >Navegacion:</h3>
+        <a href="">Registro/Inicio de Sesion:</a> <br>
+        <a href="">Perfiles del alumnado</a> <br>
+        <a href="">Alumnos registrados</a> <br> 
     </section>
     <br>
     <section>
-        <h2>Inicio de Sesión:</h2>
+        <form action="otra.html">
+            <fieldset>
+                <legend>Registro</legend>
+            <label for="Nombre">Nombre del alumno: </label>
+            <input type="text" name="" id="Nombre" required> <br>
+            <label for="Edad">Edad: </label>
+            <input type="number" min="17" max="80" id="Edad" required> <br>
+            <label for="Matricula">Matricula: </label>
+            <input type="number" id="Matricula" required> <br>
+            <label for="Facultad">Facultad: </label>
+            <input type="text" id="Facultad" required> <br>
+            <label for="Carrera">Carrera: </label>
+            <input type="text" id="Carrera" required> <br>
+            <label for="Semestre">Semestre: </label>
+            <select name="lista" id="Semestre"> 
+                <option value="">Primero</option>
+                <option value="">Segundo</option>
+                <option value="">Tercero</option>
+                <option value="">Cuarto</option>
+                <option value="">Quinto</option>
+                <option value="">Sexto</option>
+                <option value="">Septimo</option>
+                <option value="">Octavo</option>
+                <option value="">Noveno</option>
+                <option value="">Decimo o superior</option>
+            </select> <br>
+            <label for="Contraseña">Contraseña: </label>
+            <input type="password" name="" id="Contraseña" required> <br>
+            <label for="ConfirmarContraseña">Confirmar contraseña: </label>
+            <input type="password" name="" id="ConfirmarContraseña" required> <br>
+            <input type="reset">
+            <input type="submit" value="Enviar">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Inicio de Sesión</legend>
+                <label for="Matricula2">Matricula: </label>
+                <input type="number" id="Matricula2" required> <br>
+                <label for="Contraseña2">Contraseña: </label>
+                <input type="password" name="" id="Contraseña2" required> <br>
+                <input type="reset">
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
     </section>
     <br>
     <footer style="line-height: 0.01; margin: 0;">
