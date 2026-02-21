@@ -24,7 +24,7 @@ Este conflicto se le conoce como conflicto de fusion (merge conflict)
 
 ## Cómo lo resolvimos 
 
- Debido a que el programa no puede editar el programa, ya que no sabe que conservar, nos toca a nosotros elegir de forma manual el archivo conflictivo para seleccionar los cambios que quieres mantener en la fusión final. Esto lo podemos realizar desde el editor de conflictos desde GitHub.
+ Debido a que el programa no puede editar el codigo, ya que no sabe que conservar, nos toca a nosotros elegir de forma manual el archivo conflictivo para seleccionar los cambios que quieres mantener en la fusión final. Esto lo podemos realizar desde el editor de conflictos desde GitHub.
  Como dato, al solucionar este tipo de problemas, toda la rama base de la solicitud de cambios se combina en la rama principal activa; por lo tanto, hay que tener cuidado a la hora de cuidar que fusionamos y que conservamos, pues todo se juntara a la rama activa.
 
 ## Qué aprendimos 
