@@ -3,71 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Iniciar Sesión</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .formulario-contenedor {
+            max-width: 650px;
+            margin: 20px auto;
+            background-color: white;
+            border: 4px solid #333;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            padding: 15px;
+        }
+        legend {
+            padding: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        input[type="reset"],
+        input[type="submit"] {
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+        input[type="reset"]:hover {
+            background-color: #da190b;
+        }
+    </style>
 </head>
-<header style="background-color: lightcoral;">
-    <h1>BUAPortafolio Profesional</h1>
-    <h1>Registro / Inicio de Sesión:</h1>
+<header style="background-color: rgb(94,144,184);
+               width:100%;
+               padding:15px 30px;
+               display:flex;
+               align-items:center;
+               justify-content:space-between;">
+
+    <div style="display:flex; align-items:center; gap:15px;">
+        
+        <img src="/Examen01/Imagenes/943026.png" alt="Logo BUAPortafolio"
+             style="width:60px; height:auto;">
+
+        <h1 style="margin:0;">
+            BUAPortafolio Profesional
+        </h1>
+
+    </div>
+
+    <div style="font-size:18px;">
+        
+        <a href="index.html"
+           style="color:rgb(0,49,114); text-decoration:none; margin-right:10px;">
+           Inicio
+        </a>
+
+        |
+
+        <a href="PortAAAG.html"
+           style="color:rgb(0,49,114); text-decoration:none; margin-left:10px;">
+           Acerca de esta pagina
+        </a>
+
+    </div>
+
 </header>
-<body>
-    <section style = "border: 2px solid black;">
-        <h3 >Navegacion:</h3>
-        <a href="index.html">Indice</a> <br>
-        <a href="AlmRegistrados.html">Alumnos registrados</a> <br> 
+
+<body style="background-image: url(/Examen01/Imagenes/OIP\ \(2\).webp); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh;">
+    <section style="text-align: center; width: 100%; display: flex; justify-content: center; align-items: center; flex-grow: 1;">
+        <div style="background-color: rgba(26, 103, 170, 0.8); border: 4px solid #333; border-radius: 12px; padding: 40px; max-width: 700px; width: 100%; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);">
+        <fieldset style="border: none; padding: 0;">
+        <legend style="text-align: center; margin-bottom: 30px;">Inicio de Sesión</legend>
+        <label for="Matricula2">Matricula: </label>
+        <input type="number" id="Matricula2" required>
+        <label for="Contraseña2">Contraseña: </label>
+        <input type="password" id="Contraseña2" required>
+        <div style="text-align: center; margin-top: 20px;">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+        </div>
+        <p style="margin-top: 20px; text-align: center;">¿No estas registrado? <a href="registro.html">Registrate aquí</a></p>
+        </fieldset>
+        </div>
     </section>
-    <br>
-    <section>
-        <form action="otra.html">
-            <fieldset>
-                <legend>Registro</legend>
-            <label for="Nombre">Nombre del alumno: </label>
-            <input type="text" name="" id="Nombre" required> <br>
-            <label for="Edad">Edad: </label>
-            <input type="number" min="17" max="80" id="Edad" required> <br>
-            <label for="Matricula">Matricula: </label>
-            <input type="number" id="Matricula" required> <br>
-            <label for="Facultad">Facultad: </label>
-            <input type="text" id="Facultad" required> <br>
-            <label for="Carrera">Carrera: </label>
-            <input type="text" id="Carrera" required> <br>
-            <label for="Semestre">Semestre: </label>
-            <select name="lista" id="Semestre"> 
-                <option value="">Primero</option>
-                <option value="">Segundo</option>
-                <option value="">Tercero</option>
-                <option value="">Cuarto</option>
-                <option value="">Quinto</option>
-                <option value="">Sexto</option>
-                <option value="">Septimo</option>
-                <option value="">Octavo</option>
-                <option value="">Noveno</option>
-                <option value="">Decimo o superior</option>
-            </select> <br>
-            <label for="Contraseña">Contraseña: </label>
-            <input type="password" name="" id="Contraseña" required> <br>
-            <label for="ConfirmarContraseña">Confirmar contraseña: </label>
-            <input type="password" name="" id="ConfirmarContraseña" required> <br>
-            <input type="reset">
-            <input type="submit" value="Enviar">
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend>Inicio de Sesión</legend>
-                <label for="Matricula2">Matricula: </label>
-                <input type="number" id="Matricula2" required> <br>
-                <label for="Contraseña2">Contraseña: </label>
-                <input type="password" name="" id="Contraseña2" required> <br>
-                <input type="reset">
-                <input type="submit" value="Enviar">
-            </fieldset>
-        </form>
-    </section>
-    <br>
-    <footer style="line-height: 0.01; margin: 0;">
-        <h5>De estudiantes para estudiantes; desarrollado por:</h5>
-        <h5>Alexis Abel Anaya Galván - ag202416673@alm.buap.mx</h5>
-        <h5>Hugo Andres Bautista Hernandez - hugobautista896@gmail.com</h5>
-        <h6>© 2024 BUAPortafolio Profesional. Todos los derechos reservados.</h6>
-    </footer>
+     <footer style="background-color: rgba(22,118,145,0.8); 
+               width:100%; 
+               padding:20px; 
+               box-sizing:border-box;
+               margin-top:auto;">
+
+    <h2 style="text-align:center;">
+        De estudiantes para estudiantes; desarrollado por:
+    </h2>
+
+    <div style="display:flex; 
+                justify-content:space-around; 
+                align-items:center; 
+                flex-wrap:wrap; 
+                gap:20px;">
+
+        <!-- Información de mi compa el therian/Furro-->
+        <div style="display:flex; align-items:center; gap:15px;">
+            <img src="/Examen01/Imagenes/Screenshot 2026-02-21 001344.png" 
+                 alt="Alexis"
+                 style="width:80px; height:80px; border-radius:50%; object-fit:cover;">
+            <div>
+                <h4 style="margin:5px 0;">Alexis Abel Anaya Galván</h4>
+                <p style="margin:5px 0;">ag202416673@alm.buap.mx</p>
+            </div>
+        </div>
+
+        <!--Mi información toda gigachad god :V-->
+        <div style="display:flex; align-items:center; gap:15px;">
+            <img src="/Examen01/Imagenes/channels4_profile.jpg" 
+                 alt="Hugo"
+                 style="width:80px; height:80px; border-radius:50%; object-fit:cover;">
+            <div>
+                <h4 style="margin:5px 0;">Hugo Andres Bautista Hernandez</h4>
+                <p style="margin:5px 0;">bh202440360@alm.buap.mx</p>
+            </div>
+        </div>
+
+    </div>
+<!--NOmbre la compania toda bodria-->
+    <h4 style="text-align:center; margin-top:20px;">
+        © 2024 BUAPortafolio Profesional. Todos los derechos reservados.
+    </h4>
+
+</footer>
 </body>
 </html>
